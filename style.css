@@ -3,6 +3,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+
 }
 
 /* .Navbar {
@@ -128,6 +130,10 @@ a {
 .single-product>.pr-content>button:hover {
     background-color: #000;
     color: #fff;
+}
+
+.single-product>.pr-content>h6>b {
+    margin-right: 20px;
 }
 
 .buttons {

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Shopping Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -30,6 +31,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <a href="cart.html">
                     <i class="fa-solid fa-cart-shopping"></i>
+                    <div id="cartAmount" class="cartAmount">0</div>
                 </a>
                 <a href="login/login.html">
                     <i class="fa-solid fa-user" id="users"></i>
@@ -39,8 +41,22 @@
             </div>
         </div>
 
+        <div class="Bill">
+            <div id="total" class="text-center">
+                <h1>Total Bill: <span id="max">2.000.000 VND</span></h1>
+                <div class="btn-CK">
+                    <button class="btn-checkout">Checkout</button>
+                    <button class="btn-Clear">Clear Cart</button>
+                </div>
+            </div>
+
+            <div id="Shopping-Cart" class="Shopping-Cart">
+
+            </div>
+        </div>
     </div>
-    <script src="app.js"></script>
+    <script src="JS/data.js"></script>
+    <script src="JS/cart.js"></script>
 </body>
 
 </html>
