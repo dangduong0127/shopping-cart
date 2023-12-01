@@ -58,9 +58,6 @@ let generateCartItems = () => {
           </div>
           `;
         }
-        // max.innerHTML = `${basket[key].item * ShopItemsData[i].price}VND`;
-        // numTotal += basket[key].item * ShopItemsData[i].price;
-        // console.log(numTotal);
       }
     }
   } else {
@@ -119,6 +116,7 @@ let removeItems = (id) => {
   generateCartItems();
   localStorage.setItem("data", JSON.stringify(basket));
   totalAmount();
+  Calculation();
 };
 
 let totalAmount = () => {
@@ -136,3 +134,11 @@ let totalAmount = () => {
   }
 };
 totalAmount();
+
+let ClearAllPr = () => {
+  basket = [];
+  totalAmount();
+  generateCartItems();
+  localStorage.setItem("data", JSON.stringify(basket));
+  Calculation();
+};

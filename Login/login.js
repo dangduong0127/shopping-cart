@@ -1,4 +1,4 @@
-function Login(e) {
+function Login() {
   event.preventDefault();
   let username = document.getElementById("email").value;
   let pass = document.getElementById("password").value;
@@ -28,7 +28,7 @@ function checkIfLoggedIn() {
   let loggedInUser = localStorage.getItem("loggedInUser");
   if (loggedInUser) {
     // Nếu có thông tin người dùng, hiển thị trang đã đăng nhập
-    window.location = "../index.html";
+    window.location = "../Account/acc.html";
   }
 }
 
